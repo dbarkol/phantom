@@ -23,7 +23,8 @@ namespace PhantomFuncApp
             {
                 Filename = eventGridEvent.Subject,
                 Available = true,
-                Description = "This is from containera"
+                Description = "This is from containera",
+                OriginalData = eventGridEvent.Data
             };
 
             await Utils.SendEvent(fileInfo, "Phantom.NewFile.FileTypeA", "subjecta");

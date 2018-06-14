@@ -24,7 +24,7 @@ namespace PhantomFuncApp
                 {
                     Id = Guid.NewGuid().ToString(),
                     Data = fileInfo,
-                    EventTime = DateTime.Now,
+                    EventTime = DateTime.UtcNow,
                     EventType = eventType,
                     Subject = subject,
                     DataVersion = "1.0"
