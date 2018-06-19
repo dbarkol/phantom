@@ -10,7 +10,7 @@ namespace PhantomFuncApp
 {
     internal static class Utils
     {
-        internal static async Task SendEvent(CustomFileInfo fileInfo, string eventType, string subject)
+        internal static async Task SendEvent(object eventData, string eventType, string subject)
         {
             var topicHostName = Environment.GetEnvironmentVariable("TopicHostName");
             var topicKey = Environment.GetEnvironmentVariable("TopicKey");
@@ -23,7 +23,7 @@ namespace PhantomFuncApp
                 new EventGridEvent()
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Data = fileInfo,
+                    Data = eventData,
                     EventTime = DateTime.UtcNow,
                     EventType = eventType,
                     Subject = subject,
