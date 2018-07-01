@@ -23,8 +23,14 @@ namespace PhantomFuncApp
 
             var requestBody = new StreamReader(req.Body).ReadToEnd();
             var csvLines = requestBody.Split('\r');
-            var items = csvLines.Select(line => line.Split(','))
-                .ToDictionary(lineAttr => lineAttr[0].Replace("\n", ""), lineAttr => lineAttr[1]);
+
+            var items = new Dictionary<string, string>();
+            foreach (var line in csvLines)
+            {
+                var lineAttr = line.Split(',');
+                if (lineAttr.Length != 2) continue;
+                items.Add(lineAttr[0].Replace("\n", ""), lineAttr[1]);
+            }
 
             return new JsonResult(items);
         }
