@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomFuncApp", "PhantomFuncApp\PhantomFuncApp.csproj", "{D47193BB-47B5-4D3C-AF76-FC80F09D1115}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phantom.Models", "Phantom.Models\Phantom.Models.csproj", "{8384687E-76D7-4789-833A-7A22A5FC5231}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{D47193BB-47B5-4D3C-AF76-FC80F09D1115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D47193BB-47B5-4D3C-AF76-FC80F09D1115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D47193BB-47B5-4D3C-AF76-FC80F09D1115}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8384687E-76D7-4789-833A-7A22A5FC5231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8384687E-76D7-4789-833A-7A22A5FC5231}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8384687E-76D7-4789-833A-7A22A5FC5231}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8384687E-76D7-4789-833A-7A22A5FC5231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
