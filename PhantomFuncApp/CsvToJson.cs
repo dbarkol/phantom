@@ -32,7 +32,7 @@ namespace PhantomFuncApp
                 items.Add(lineAttr[0].Replace("\n", ""), lineAttr[1]);
             }
 
-            return new JsonResult(items);
+            return new ContentResult { Content = JsonConvert.SerializeObject(items), ContentType = "application/json" };
         }
     }
 }
